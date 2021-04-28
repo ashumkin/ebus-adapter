@@ -198,9 +198,9 @@
 <text x="138.040309375" y="61.53309375" size="1.27" layer="27">2.2uF</text>
 <text x="141.961690625" y="46.295553125" size="1.27" layer="27" rot="R180">2.2uF</text>
 <text x="148.552128125" y="86.128671875" size="0.762" layer="27">5V</text>
-<text x="146.568859375" y="35.520696875" size="0.762" layer="27">GND</text>
-<text x="144.24796875" y="35.491196875" size="0.762" layer="27">5V</text>
-<text x="141.564009375" y="35.4503375" size="0.762" layer="27">3V3</text>
+<text x="146.568859375" y="35.520696875" size="0.762" layer="25">GND</text>
+<text x="144.24796875" y="35.491196875" size="0.762" layer="25">5V</text>
+<text x="141.564009375" y="35.4503375" size="0.762" layer="25">3V3</text>
 <text x="113.566965625" y="65.08575" size="1.27" layer="27">100nF</text>
 <text x="110.29515625" y="68.4499125" size="1.27" layer="27" rot="R90">RX</text>
 <text x="109.4713875" y="73.25135625" size="1.27" layer="27" rot="R90">Tx</text>
@@ -1184,7 +1184,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1045399" x="122.992571875" y="37.782615625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="05M4044" x="122.992571875" y="37.782615625" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="1" x="122.992571875" y="37.782615625" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="120.579571875" y="37.147615625" size="1.27" layer="27" ratio="10"/>
+<attribute name="VALUE" x="119.91220625" y="39.190525" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="OK2" library="optocoupler" library_urn="urn:adsk.eagle:library:320" package="DIL06" package3d_urn="urn:adsk.eagle:package:21942/1" value="CNY17" x="122.81389375" y="81.1621375" smashed="yes">
 <attribute name="MF" value="" x="122.81389375" y="81.1621375" size="1.778" layer="27" display="off"/>
@@ -1197,7 +1197,7 @@ design rules under a new name.</description>
 </element>
 <element name="R1" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="820" x="115.0468125" y="39.231153125" smashed="yes" rot="R270">
 <attribute name="NAME" x="113.220434375" y="43.830471875" size="0.9906" layer="25" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="114.5642125" y="40.856753125" size="0.9906" layer="27" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="114.5642125" y="40.856753125" size="0.9906" layer="25" ratio="12" rot="R270"/>
 </element>
 <element name="R2" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="220" x="136.645309375" y="81.57568125" smashed="yes" rot="R270">
 <attribute name="NAME" x="134.645521875" y="86.375184375" size="0.9906" layer="25" ratio="12" rot="R270"/>
@@ -1217,7 +1217,7 @@ design rules under a new name.</description>
 </element>
 <element name="R3" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="1.2K" x="109.277275" y="39.065275" smashed="yes" rot="R270">
 <attribute name="NAME" x="107.418209375" y="43.89340625" size="0.9906" layer="25" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="108.794675" y="40.690875" size="0.9906" layer="27" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="108.794675" y="40.690875" size="0.9906" layer="25" ratio="12" rot="R270"/>
 </element>
 <element name="R4" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="112.168515625" y="81.412171875" smashed="yes" rot="R90">
 <attribute name="NAME" x="111.2120625" y="84.323515625" size="0.9906" layer="25" ratio="12" rot="R90"/>
@@ -1225,7 +1225,7 @@ design rules under a new name.</description>
 </element>
 <element name="R5" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="390" x="153.94293125" y="36.728471875" smashed="yes" rot="R180">
 <attribute name="NAME" x="158.35543125" y="38.418353125" size="0.9906" layer="25" ratio="12" rot="R180"/>
-<attribute name="VALUE" x="155.943053125" y="37.177025" size="0.9906" layer="27" ratio="12" rot="R180"/>
+<attribute name="VALUE" x="155.943053125" y="37.177025" size="0.9906" layer="25" ratio="12" rot="R180"/>
 </element>
 <element name="R6" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="115.075665625" y="81.3887375" smashed="yes" rot="R90">
 <attribute name="NAME" x="114.096975" y="84.3142125" size="0.9906" layer="25" ratio="12" rot="R90"/>
@@ -1234,7 +1234,7 @@ design rules under a new name.</description>
 <element name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" package="DIL08" package3d_urn="urn:adsk.eagle:package:16409/2" value="TLC393P" x="135.832309375" y="38.424090625" smashed="yes">
 <attribute name="NAME" x="130.498309375" y="35.503090625" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="135.832309375" y="38.424090625" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="132.276309375" y="37.789090625" size="1.27" layer="27" ratio="10"/>
+<attribute name="VALUE" x="131.462775" y="39.65344375" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="R7" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="18K" x="153.843140625" y="46.84746875" smashed="yes" rot="R180">
 <attribute name="NAME" x="158.383871875" y="48.658884375" size="0.9906" layer="25" ratio="12" rot="R180"/>
@@ -1340,7 +1340,7 @@ design rules under a new name.</description>
 </element>
 <element name="R13" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="220" x="111.978240625" y="39.1274125" smashed="yes" rot="R270">
 <attribute name="NAME" x="110.184553125" y="44.4458625" size="0.9906" layer="25" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="111.495640625" y="40.7530125" size="0.9906" layer="27" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="111.495640625" y="40.7530125" size="0.9906" layer="25" ratio="12" rot="R270"/>
 </element>
 <element name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" package="TO92" package3d_urn="urn:adsk.eagle:package:16416/2" value="78L05Z" x="138.8971125" y="73.307790625" smashed="yes">
 <attribute name="NAME" x="134.395809375" y="75.397378125" size="1.27" layer="25" ratio="10"/>
