@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -9538,9 +9538,7 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <attribute name="NAME" x="291.084" y="185.801" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="291.084" y="180.721" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="P+7" gate="1" x="302.26" y="198.12" smashed="yes">
-<attribute name="VALUE" x="299.72" y="193.04" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="P+7" gate="1" x="302.26" y="198.12" smashed="yes"/>
 <instance part="GND15" gate="1" x="289.56" y="172.72" smashed="yes">
 <attribute name="VALUE" x="287.02" y="170.18" size="1.778" layer="96"/>
 </instance>
@@ -9697,6 +9695,16 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="ELVUSBUART" gate="A" pin="2"/>
 <wire x1="76.2" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="88.9" y="71.12" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<wire x1="302.26" y1="195.58" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="PS1" gate="G$1" pin="+VIN"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
+<junction x="289.56" y="187.96"/>
+<label x="297.18" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXI" class="0">
@@ -9876,15 +9884,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <junction x="208.28" y="165.1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="160.02" x2="218.44" y2="161.29" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="302.26" y1="195.58" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="PS1" gate="G$1" pin="+VIN"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
-<junction x="289.56" y="187.96"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>

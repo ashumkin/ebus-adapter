@@ -9340,9 +9340,9 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <attribute name="NAME" x="140.716" y="94.488" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.715" y="94.488" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED2" gate="G$1" x="175.26" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="170.688" y="52.324" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.688" y="60.325" size="1.778" layer="96"/>
+<instance part="LED2" gate="G$1" x="172.72" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="165.608" y="59.944" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.608" y="62.865" size="1.778" layer="96"/>
 </instance>
 <instance part="LED3" gate="G$1" x="154.94" y="149.86" smashed="yes">
 <attribute name="NAME" x="158.496" y="145.288" size="1.778" layer="95" rot="R90"/>
@@ -9896,12 +9896,9 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <net name="N$4" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="OK2" gate="G$1" pin="COL"/>
-<wire x1="162.56" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="177.8" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="55.88" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="175.26" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -10074,6 +10071,13 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="JP4" gate="A" pin="4"/>
 <wire x1="210.82" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
 <label x="210.82" y="198.12" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="OK2" gate="G$1" pin="COL"/>
+<wire x1="167.64" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

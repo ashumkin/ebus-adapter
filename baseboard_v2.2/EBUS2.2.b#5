@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -1236,17 +1236,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="107.418209375" y="43.89340625" size="0.9906" layer="25" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="108.794675" y="40.690875" size="0.9906" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="R4" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="112.168515625" y="81.412171875" smashed="yes" rot="R90">
-<attribute name="NAME" x="111.2120625" y="84.323515625" size="0.9906" layer="25" ratio="12" rot="R90"/>
-<attribute name="VALUE" x="112.651115625" y="79.786571875" size="0.9906" layer="25" ratio="12" rot="R90"/>
+<element name="R4" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="112.850084375" y="81.071628125" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.9363375" y="85.678684375" size="0.9906" layer="25" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="112.392884375" y="81.452628125" size="0.9906" layer="25" ratio="12" rot="R270"/>
 </element>
 <element name="R5" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="390" x="153.94293125" y="36.728471875" smashed="yes" rot="R180">
 <attribute name="NAME" x="158.35543125" y="38.418353125" size="0.9906" layer="25" ratio="12" rot="R180"/>
 <attribute name="VALUE" x="155.943053125" y="37.177025" size="0.9906" layer="25" ratio="12" rot="R180"/>
 </element>
-<element name="R6" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="115.075665625" y="81.3887375" smashed="yes" rot="R90">
-<attribute name="NAME" x="114.096975" y="84.3142125" size="0.9906" layer="25" ratio="12" rot="R90"/>
-<attribute name="VALUE" x="115.558265625" y="79.7631375" size="0.9906" layer="25" ratio="12" rot="R90"/>
+<element name="R6" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="0204/7" package3d_urn="urn:adsk.eagle:package:8118465/1" value="470" x="115.863065625" y="81.1347375" smashed="yes" rot="R90">
+<attribute name="NAME" x="114.884375" y="84.0602125" size="0.9906" layer="25" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="116.345665625" y="79.5091375" size="0.9906" layer="25" ratio="12" rot="R90"/>
 </element>
 <element name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" package="DIL08" package3d_urn="urn:adsk.eagle:package:16409/2" value="TLC393P" x="135.832309375" y="38.424090625" smashed="yes">
 <attribute name="NAME" x="130.498309375" y="35.503090625" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1511,7 +1511,7 @@ design rules under a new name.</description>
 <contactref element="ELVUSBUART" pad="1"/>
 <wire x1="130.8687875" y1="61.382459375" x2="136.645309375" y2="77.76568125" width="0" layer="19" extent="1-1"/>
 <wire x1="126.331309375" y1="61.182078125" x2="130.8687875" y2="61.382459375" width="0" layer="19" extent="1-1"/>
-<wire x1="115.075665625" y1="85.1987375" x2="136.645309375" y2="77.76568125" width="0" layer="19" extent="1-1"/>
+<wire x1="115.863065625" y1="84.9447375" x2="136.645309375" y2="77.76568125" width="0" layer="19" extent="1-1"/>
 <wire x1="103.428196875" y1="57.2898" x2="126.331309375" y2="61.182078125" width="0" layer="19" extent="1-1"/>
 <wire x1="115.0468125" y1="35.421153125" x2="103.428196875" y2="57.2898" width="0" layer="19" extent="1-1"/>
 <wire x1="142.442471875" y1="33.527740625" x2="115.0468125" y2="35.421153125" width="0" layer="19" extent="1-1"/>
@@ -1524,7 +1524,7 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="R6" pad="1"/>
 <contactref element="OK2" pad="1"/>
-<wire x1="115.075665625" y1="77.5787375" x2="120.27389375" y2="77.3521375" width="0" layer="19" extent="1-1"/>
+<wire x1="115.863065625" y1="77.3247375" x2="120.27389375" y2="77.3521375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="LED3" pad="A"/>
@@ -1542,7 +1542,7 @@ design rules under a new name.</description>
 <wire x1="137.26659375" y1="72.706246875" x2="148.781540625" y2="84.19223125" width="0" layer="19" extent="1-1"/>
 <wire x1="124.954584375" y1="69.142603125" x2="137.26659375" y2="72.706246875" width="0" layer="19" extent="1-1"/>
 <wire x1="114.78751875" y1="68.452821875" x2="124.954584375" y2="69.142603125" width="0" layer="19" extent="1-1"/>
-<wire x1="112.168515625" y1="85.222171875" x2="114.78751875" y2="68.452821875" width="0" layer="19" extent="1-1"/>
+<wire x1="112.850084375" y1="77.261628125" x2="114.78751875" y2="68.452821875" width="0" layer="19" extent="1-1"/>
 <wire x1="144.127253125" y1="53.84759375" x2="137.26659375" y2="72.706246875" width="0" layer="19" extent="1-1"/>
 <wire x1="140.654165625" y1="52.84583125" x2="144.127253125" y2="53.84759375" width="0" layer="19" extent="1-1"/>
 <wire x1="139.634165625" y1="47.89671875" x2="140.654165625" y2="52.84583125" width="0" layer="19" extent="1-1"/>
@@ -1553,12 +1553,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$4">
 <contactref element="R4" pad="1"/>
-<contactref element="LED2" pad="K"/>
-<contactref element="OK2" pad="5"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="112.168515625" y1="77.602171875" x2="122.81389375" y2="84.9721375" width="0" layer="19" extent="1-1"/>
-<wire x1="105.274053125" y1="77.617415625" x2="112.168515625" y2="77.602171875" width="0" layer="19" extent="1-1"/>
-<wire x1="105.274053125" y1="75.077415625" x2="105.274053125" y2="77.617415625" width="0" layer="19" extent="1-1"/>
+<wire x1="105.274053125" y1="75.077415625" x2="112.850084375" y2="84.881628125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V+">
 <contactref element="IC1" pad="8"/>
@@ -1661,6 +1657,11 @@ design rules under a new name.</description>
 <wire x1="141.283303125" y1="64.399271875" x2="144.858396875" y2="70.886275" width="0" layer="19" extent="1-1"/>
 <wire x1="144.127253125" y1="58.92759375" x2="141.283303125" y2="64.399271875" width="0" layer="19" extent="1-1"/>
 <wire x1="140.654165625" y1="57.92583125" x2="144.127253125" y2="58.92759375" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$12">
+<contactref element="LED2" pad="K"/>
+<contactref element="OK2" pad="5"/>
+<wire x1="105.274053125" y1="77.617415625" x2="122.81389375" y2="84.9721375" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

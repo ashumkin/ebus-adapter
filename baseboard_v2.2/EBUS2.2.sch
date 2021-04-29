@@ -966,6 +966,12 @@
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -998,6 +1004,19 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -9247,12 +9266,14 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
 <part name="PS1" library="RNM-0512S" deviceset="RNM-0512S" device=""/>
 <part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-KIT-EZ-50V-20%" package3d_urn="urn:adsk.eagle:package:37428/1" value="2.2uF"/>
-<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="" value="GND2"/>
 <part name="JP4" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="" value="GND2"/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="" value="GND"/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -9538,7 +9559,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <attribute name="NAME" x="291.084" y="185.801" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="291.084" y="180.721" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="P+7" gate="1" x="302.26" y="198.12" smashed="yes"/>
 <instance part="GND15" gate="1" x="289.56" y="172.72" smashed="yes">
 <attribute name="VALUE" x="287.02" y="170.18" size="1.778" layer="96"/>
 </instance>
@@ -9549,11 +9569,21 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <instance part="GND16" gate="1" x="200.66" y="180.34" smashed="yes">
 <attribute name="VALUE" x="198.12" y="177.8" size="1.778" layer="96"/>
 </instance>
-<instance part="P+8" gate="1" x="220.98" y="200.66" smashed="yes">
-<attribute name="VALUE" x="218.44" y="195.58" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND17" gate="1" x="210.82" y="180.34" smashed="yes">
 <attribute name="VALUE" x="208.28" y="177.8" size="1.778" layer="96"/>
+</instance>
+<instance part="P+9" gate="VCC" x="226.06" y="200.66" smashed="yes">
+<attribute name="VALUE" x="223.52" y="198.12" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+7" gate="VCC" x="302.26" y="198.12" smashed="yes">
+<attribute name="VALUE" x="299.72" y="195.58" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="IC1" gate="P" x="187.96" y="86.36" smashed="yes"/>
+<instance part="P+8" gate="1" x="187.96" y="104.14" smashed="yes">
+<attribute name="VALUE" x="185.42" y="99.06" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND18" gate="1" x="187.96" y="68.58" smashed="yes">
+<attribute name="VALUE" x="185.42" y="66.04" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9674,6 +9704,11 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="210.82" y1="193.04" x2="210.82" y2="182.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="P" pin="V-"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="187.96" y1="71.12" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -9695,16 +9730,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="ELVUSBUART" gate="A" pin="2"/>
 <wire x1="76.2" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="88.9" y="71.12" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="302.26" y1="195.58" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="PS1" gate="G$1" pin="+VIN"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
-<junction x="289.56" y="187.96"/>
-<label x="297.18" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXI" class="0">
@@ -9886,10 +9911,9 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="218.44" y1="160.02" x2="218.44" y2="161.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="IC1" gate="P" pin="V+"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="220.98" y1="198.12" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="2"/>
-<wire x1="220.98" y1="190.5" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="101.6" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10077,6 +10101,24 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="OK2" gate="G$1" pin="COL"/>
 <wire x1="167.64" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="2"/>
+<wire x1="193.04" y1="190.5" x2="226.06" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="226.06" y1="190.5" x2="226.06" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="302.26" y1="195.58" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="PS1" gate="G$1" pin="+VIN"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
+<junction x="289.56" y="187.96"/>
+<label x="297.18" y="195.58" size="1.778" layer="95"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 </nets>
